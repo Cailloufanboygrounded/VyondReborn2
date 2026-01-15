@@ -136,3 +136,40 @@ function makeVideo() {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyond Reborn Flash Editor</title>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f2f5; text-align: center; padding: 20px; }
+  header { background: #0078d4; color: white; padding: 15px; border-radius: 6px; }
+  #flashContainer { margin-top: 20px; border: 2px solid #333; border-radius: 6px; display: inline-block; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vyond Reborn Flash Editor</h1>
+  <p>Retro Flash-based animation editor (simulated with Ruffle)</p>
+</header>
+
+<div id="flashContainer">
+  <!-- Ruffle will load your old Flash SWF here -->
+  <embed src="VyondRebornEditor.swf" width="800" height="600">
+</div>
+
+<script>
+  // Initialize Ruffle
+  const ruffle = window.RufflePlayer.newest();
+  const container = document.getElementById("flashContainer");
+  container.innerHTML = "";
+  const player = ruffle.createPlayer();
+  container.appendChild(player);
+  player.load("VyondRebornEditor.swf"); // Replace with your SWF file
+</script>
+
+</body>
+</html>
