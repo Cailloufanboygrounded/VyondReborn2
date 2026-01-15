@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyond Reborn Home</title>
+<style>
+  /* Reset & basic styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+
+  header {
+    background-color: #0078d4;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #00c6ff, #0072ff);
+    color: white;
+  }
+
+  .hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+
+  .hero button {
+    background-color: #ffcd00;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .hero button:hover {
+    background-color: #e6b800;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+
+  .feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .feature-card h3 {
+    margin-top: 0;
+    color: #0078d4;
+  }
+
+  .feature-card p {
+    color: #555;
+    font-size: 0.95em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vyond Reborn</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Templates</a>
+    <a href="#">Make a Video</a>
+    <a href="#">Library</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Create Your Animated Videos Instantly!</h2>
+  <button onclick="makeVideo()">Make a Video</button>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>Easy Animations</h3>
+    <p>Drag & drop characters, props, and backgrounds to make your video in minutes.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Customizable Templates</h3>
+    <p>Choose from hundreds of templates to jumpstart your animation projects.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Export & Share</h3>
+    <p>Export your videos in HD and share them with your audience instantly.</p>
+  </div>
+</section>
+
+<script>
+function makeVideo() {
+  alert("Welcome to the Vyond Reborn editor! 🎬");
+  // You can replace this with a real editor page like editor.html
+  window.location.href = "editor.html";
+}
+</script>
+
+</body>
+</html>
